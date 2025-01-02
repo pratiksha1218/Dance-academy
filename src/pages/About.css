@@ -1,0 +1,163 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+    font-family: "Lora";
+    line-height: 1.6;
+    background-color: black;
+    color:  rgb(214, 149, 149);
+  }
+  
+  .hero {
+    text-align: center;
+    background:  rgb(172, 25, 25);
+    color: rgb(214, 149, 149);
+    padding: 2rem;
+  }
+  
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: space-between;
+    background-color: black;
+  }
+  
+  .about-content {
+    flex: 1 1 60%;
+  }
+  
+  .about-content h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .about-content p {
+    margin-bottom: 1rem;
+  }
+  
+  .about-image {
+    flex: 1 1 35%;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    height:400px;
+    width:500px;
+
+  }
+  
+  .team {
+    background: black;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .team h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .team-member {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .team-member img {
+    width: 200px;
+    height:160px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta {
+    background:  rgb(172, 25, 25);
+    color: rgb(214, 149, 149);
+    text-align: center;
+    padding: 2rem;
+  }
+  .cta h2{
+    color:rgb(214, 149, 149);
+  }
+  
+  .cta button {
+    background: #333;
+    color: rgb(214, 149, 149);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .cta button:hover {
+    background: #555;
+  }
+
+  .feedback-form {
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px white;
+  }
+  
+  .feedback-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .feedback-form .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .feedback-form .form-group input,
+  .feedback-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .submit-feedback-button {
+    padding: 10px 15px;
+    background-color: rgb(172, 25, 25);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-feedback-button:hover {
+    background-color:rgb(29, 137, 44);
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+    }
+  
+    .team-grid {
+      flex-direction: column;
+    }
+  
+    .about-content, .about-image {
+      flex: 1 1 100%;
+    }
+  }
+  

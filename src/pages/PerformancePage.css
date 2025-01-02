@@ -1,0 +1,126 @@
+.performance-page {
+  /* All general page styles go here */
+}
+
+.performance-page body, 
+.performance-page header, 
+.performance-page h1, 
+.performance-page p, 
+.performance-page button, 
+.performance-page div {
+  margin: 0;
+ padding:safe fixes}
+
+.performance-page {
+  background-image: url('onered.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  font-family: "Lora";
+  background-color:black;
+  color: #333;
+}
+
+.performance-page .hero {
+  background:transparent ;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.performance-page .hero h1 {
+  margin-bottom: 0.5rem;
+  color: rgb(172, 25, 25);
+}
+
+.performance-page .hero p {
+  font-size: 1.2rem;
+}
+
+.performance-page .event-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.performance-page .event-button {
+  background:transparent;
+  color:  rgb(172, 25, 25);
+  border: 2px solid  rgb(172, 25, 25);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.performance-page .event-button:hover,
+.performance-page .event-button.active {
+  background: rgb(172, 25, 25);
+  color: rgb(214, 149, 149);
+}
+
+.performance-page .event-details {
+  padding: 2rem;
+}
+
+.performance-page .event-content {
+  background: black;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.performance-page .event-content h2 {
+  margin-bottom: 1rem;
+  color: rgb(172, 25, 25);
+}
+
+.performance-page .event-content p {
+  margin-bottom: 1rem;
+  color: rgb(214, 149, 149);
+}
+
+.performance-page .video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.performance-page .video-thumbnail {
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
+}
+
+.performance-page .video-thumbnail img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.performance-page .video-thumbnail img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .performance-page .video-thumbnail {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .performance-page .video-thumbnail {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

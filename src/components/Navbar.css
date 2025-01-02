@@ -1,0 +1,32 @@
+.navbar {
+  position: absolute; /* Ensures it stays on top of content */
+  top: 0;
+  width: 100%; /* Ensures it stretches exactly to the screen width */
+  z-index: 10; /* Layers it above the image */
+  background:transparent; /* Optional translucent background */
+  color: rgb(214, 149, 149);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-sizing: border-box; /* Includes padding in width calculation */
+  overflow: hidden; /* Prevents any overflow issues */
+  font-family: "Lora";
+}
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(214, 149, 149);
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: rgb(172, 25, 25);
+  }
+  
